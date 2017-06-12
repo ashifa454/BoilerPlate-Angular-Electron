@@ -1,22 +1,38 @@
 {
-  "name": "electron-quick-start",
+  "name": "CMS",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "build":"webpack --progress --profile --colors --display-error-details --display-cached",
+    "watch":"webpack --watch --progress --profile --colors --display-error-details --display-cached",
+    "start": "electron app"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "devDependencies": {
+    "electron": "latest",
+    "electron-prebuilt":"latest",
+    "es6-shim":"latest",
+    "ts-loader":"latest",
+    "typescript":"latest",
+    "webpack":"latest",
+    "webpack-dev-server": "latest" 
+    },
+    "dependencies": {
+      "angular-2": "latest",
+      "zone.js":"latest",
+      "gulp":"latest",
+      "material-design-lite": "latest",
+      "es6-shim":"latest",
+      "reflect-metadata":"latest",
+      "rxjs":"latest"
+    },
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
+    "Ebook",
+    "Reader",
+    "CMS",
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "~1.6.2"
-  }
+  "author": "ASIF ANSARI",
+  "license": "CC0-1.0"
 }
